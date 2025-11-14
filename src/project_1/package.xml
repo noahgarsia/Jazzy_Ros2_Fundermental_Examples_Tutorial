@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>project_1</name>
+  <version>0.0.0</version>
+  <description>Example C++ ROS 2 package for Project 1</description>
+
+  <maintainer email="Noahgarsia@outlook.com">Noah Garsia</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- Build dependencies -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <!-- Core dependencies -->
+  <depend>rclcpp</depend>
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+
+  <!-- Optional: testing & linting -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
