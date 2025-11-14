@@ -8,8 +8,8 @@ This package inlcude minimalisistic ros2 code to demonstrated the importance of 
 - Following ROS 2 python style guidelines
 
 ## Prerequists 
-- Pyhton 3
-- Ros 2 installed
+- Pyhton must be 3
+- Ros 2 must be installed
 - Create a ROS 2 Workspace
 
 ## Author 
