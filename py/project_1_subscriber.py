@@ -30,7 +30,7 @@ class MinimalSubscriber(Node):
 
         self.subscriber_1 = self.create_subscription(
             String,
-            'py_example_topic',
+            '/project_1_example_topic',
             self.listener_callback,
             10)
         

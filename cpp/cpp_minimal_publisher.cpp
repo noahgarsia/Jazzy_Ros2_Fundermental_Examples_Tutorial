@@ -12,7 +12,7 @@ public:
     // constructor, it builds a node called minimal_cpp_publisher and initializes counter_ to 0
     {
         publisher_ = create_publisher<std_msgs::msg::String>
-        ("/ccp_example_topic", 10);
+        ("/project_1_example_topic", 10);
         // creates a publisher that will publish string messages on the topic ccp_example_topic
         // and if there is a subscriber and network issues occur, it will hold a backlog of 10
         // in its publishing queue/buffer

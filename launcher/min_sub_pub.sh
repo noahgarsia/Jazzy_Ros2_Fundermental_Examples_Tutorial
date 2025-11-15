@@ -15,7 +15,7 @@ cleanup() {
 trap 'cleanup' SIGINT
 
 #Lanch publisher node in background
-ros2 run project_1 project_1_publisher.py 
+ros2 run Jazzy_Ros2_Fundermental_Examples_Tutorial project_1_publisher.py 
 sleep 2
 #Launch subscriber node
-ros2 run project_1 project_1_subscriber.py 
+ros2 run Jazzy_Ros2_Fundermental_Examples_Tutorial project_1_subscriber.py

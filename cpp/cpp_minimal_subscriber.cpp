@@ -25,7 +25,7 @@ public:
         options.topic_stats_options.state = rclcpp::TopicStatisticsState::Disable;
 
         subscription_ = this->create_subscription<std_msgs::msg::String>(
-            "/ccp_example_topic",
+            "/project_1_example_topic",   // <-- ONLY CHANGE
             rclcpp::QoS(10),
             std::bind(&MinimalSubscriber::topic_callback, this, _1),
             options

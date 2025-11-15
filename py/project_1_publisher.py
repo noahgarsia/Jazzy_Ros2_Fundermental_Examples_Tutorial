@@ -26,7 +26,7 @@ class MinimalPublisher(Node):
         super().__init__('minimal_py_publisher')  # Initialise node name
 
         # Create a publisher on the topic with a queue size of 10
-        self.publisher_ = self.create_publisher(String, 'py_example_topic', 10)
+        self.publisher_ = self.create_publisher(String, '/project_1_example_topic', 10)
 
         # Create a timer to trigger publishing every 0.5 seconds
         timer_period = 0.5

@@ -21,28 +21,27 @@ set(DEPENDENCIES
 # Include directory
 include_directories(include)
 
-# C++ executables
-add_executable(ccp_minimal_publisher src/cpp_minimal_publisher.cpp)
-ament_target_dependencies(ccp_minimal_publisher ${DEPENDENCIES})
+# C++ executables (corrected paths)
+add_executable(cpp_minimal_publisher cpp/cpp_minimal_publisher.cpp)
+ament_target_dependencies(cpp_minimal_publisher ${DEPENDENCIES})
 
-add_executable(ccp_minimal_subscriber src/cpp_minimal_subscriber.cpp)
-ament_target_dependencies(ccp_minimal_subscriber ${DEPENDENCIES})
+add_executable(cpp_minimal_subscriber cpp/cpp_minimal_subscriber.cpp)
+ament_target_dependencies(cpp_minimal_subscriber ${DEPENDENCIES})
 
 # Install C++ executables
 install(
   TARGETS
-    ccp_minimal_publisher
-    ccp_minimal_subscriber
+    cpp_minimal_publisher
+    cpp_minimal_subscriber
   DESTINATION lib/${PROJECT_NAME}
 )
 
-# Install Python scripts
+# Install Python scripts (corrected)
 install(
   PROGRAMS
-    scripts/project_1_publisher.py
-    scripts/project_1_subscriber.py
+    py/project_1_publisher.py
+    py/project_1_subscriber.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
-# Export
 ament_package()
